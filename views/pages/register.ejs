@@ -1,0 +1,31 @@
+<%- include('../partials/head') %>
+
+<%- include('../partials/nav') %>
+
+<div class="content">
+    <div class="window">
+     <h1>REGISTER</h1>
+     <fieldset>
+    <form action="/register" method="POST" class="form">
+    <div><label for="username">Username:<input id="username" name="username" type="text" placeholder="Username" required/></label><br></div>
+    <div><label for="password">Password:<input id="password" name="password" type="password" pattern="[a-z 0-5]{10}" placeholder="Password: 10 characters" required/></label></div>
+    <br>
+    <div>
+        <input type="submit" value="Submit" class="submit-button"/>
+    </div>
+    <br>
+    <div>
+    <button class="button3">
+        <a href="/auth/google" role="button" class="login-font">Register with Google</a>
+    </button>
+    </div>
+    <p>Don't Have An Account? 
+        <a href="/register">Create one here.</a>
+    </p>
+    </form>
+    </fieldset>
+    </div>
+    </div>
+
+
+    <%- include('../partials/footer') %>

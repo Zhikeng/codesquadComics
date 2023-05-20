@@ -1,0 +1,42 @@
+<%- include('../partials/head') %>
+
+   <%- include('../partials/nav') %>
+
+      <div class="content">
+         <div class="window">
+            <h1>ABOUT CODESQUAD COMICS</h1>
+            <P class="codesquad-comics-intro">CodeSquad Comics is a collection of graphic novels read by Your Name.
+               Copyrighted images are used for review purposes only. Meta information about this<br />
+               collection can be found below. A detailed list of all the graphic novels in this collection can be found
+               on the homepage. Additional details about each comic book.<br />
+               including the author, genre, number of pages, and a brief synopsis, can be found by navigating to the
+               homepage and clicking the image of the book cover or the<br />
+               Details link for the desired graphic novel.</P>
+         </div>
+
+         <div class="window">
+            <h2>COMPLETE COMIC COLLECTION</h2>
+            <div class="comic-index">
+               <% for (comic of inventoryArray) { %>
+                  <div class="comic-book">
+                     <a href="/books/<%= comic._id %>"><img src="/images/<%= comic.image %>" class="comic-cover"
+                           alt="The comic's image"></a>
+                     <p><i>
+                           <%= comic.title %>
+                        </i><br>
+                        by <%= comic.author %><br />
+                           <% for(let i=0; i < comic.starRating; i++) { %>
+                              <i class="fas fa-star"></i>
+                              <% } %>
+                                 <br />
+                                 <p class="details"><a href="/books/<%= comic._id %>">Details</a></p><br />
+                  </div>
+                  <% } %>
+            </div>
+
+         </div>
+
+         <button class="button3"><a href="/login">DISPLAY MORE</a></button>
+      </div>
+
+      <%- include('../partials/footer') %>

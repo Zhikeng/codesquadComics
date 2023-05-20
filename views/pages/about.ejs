@@ -1,0 +1,26 @@
+<%- include('../partials/head') %>
+
+<%- include('../partials/nav') %>
+
+
+<div class="content">
+   <div class="window">
+   <h1>ABOUT CODESQUAD COMICS</h1>
+   <p>CodeSquad Comics is a collection of graphic novels read by Your Name. Copyrighted images are used for review purposes only. Meta information about this
+    collection can be found below. A detailed list of all the graphic novels in this collection can be found on the homepage. Additional details about each comic book.
+    including the author, genre, number of pages, and a brief synopsis, can be found by navigating to the homepage and clicking the image of the book cover or the
+    Details link for the desired graphic novel.</p>
+ 
+   <h2>COLLECTION DETAILS</h2>
+   <div class="collection_details">
+   <ul>
+    <li>total comic books:<%= inventoryArray.length %></li>
+    <li>latest additions:<%= inventoryArray.length %></li>
+    <li>5-star ratings: 5</li>
+    <li>publishers: <%= totalPub %></li>
+   </ul>
+   </div>
+   </div>
+</div>
+
+<%- include('../partials/footer') %>

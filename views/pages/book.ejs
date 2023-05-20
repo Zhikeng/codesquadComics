@@ -1,0 +1,42 @@
+<%- include('../partials/head') %>
+
+  <%- include('../partials/nav') %>
+
+    <div class="content">
+      <div class="card">
+        <div class="card-top">
+          <p class="card-title">
+            <%= foundBook.title %>
+          </p><br>
+          <div>
+            <a href="/"><img class="comic-images" src="/images/<%= foundBook.image %>" alt="The comic's image"></a>
+          </div>
+        </div>
+        <div class="comic-bio">
+          <p class="comic-details">
+            <u>Title: </u><i>
+              <%= foundBook.title %>
+            </i><br>
+            <u>Author: </u>
+            <%= foundBook.author %><br>
+              <u>Publisher: </u>
+              <%= foundBook.publisher %><br>
+                <u>Genre: </u>
+                <%= foundBook.genre %><br>
+                  <u>Number of pages: </u>
+                  <%= foundBook.number_of_pages %><br>
+                    <u>Rating: </u>
+                    <% for(let i=0; i < foundBook.starRating; i++) { %>
+                      <i class="fas fa-star"></i>
+                      <% } %>
+                        <br>
+                        <u>Synopsis: </u>
+                        <br>
+                        <%= foundBook.synopsis %>
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <%- include('../partials/footer') %>

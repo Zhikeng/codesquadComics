@@ -1,0 +1,477 @@
+:root {
+    --blue:#063C5E;
+    --white:#ffffff;
+    --yellow:#FCCF14;
+    --grey:#C2C2C2;
+    --teal:#006B6B;
+    --lightteal:#009E9E;
+    --black:#000000;
+    --coral:coral;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--grey);
+}
+
+nav {
+    background-color: var(--blue);
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+/* .nav-1 {
+    display: flex;
+    align-items: center;
+} */
+
+.nav-2 {
+    margin: 30px;
+}
+
+.img1 {
+    width:300px;
+    padding:20px;
+}
+
+.img2 {
+    width:230px;
+}
+
+.card {
+    margin:1vh auto;
+    border-radius:30px 30px;
+    background-color: var(--blue);
+}
+
+.card-top {
+    border:var(--yellow) 3px solid;
+    border-radius:30px 30px 0 0;
+}
+
+.card-title {
+    color:var(--yellow);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.comic-images {
+    height:600px;
+    width:400px;
+    margin:50px auto;
+    border-radius: 30px 30px;
+    border:var(--white) 2px solid;
+}
+
+.comic-bio {
+    background-color: var(--white);
+    border-radius: 0 0 30px 30px;
+    border:var(--yellow) 3px solid;
+    padding:5% 5%;
+    line-height: 2rem;
+}
+
+.comic-details {
+    font-size: 1rem;
+}
+
+.content {
+    padding:3%;
+    border-bottom: var(--yellow) solid 6px;
+    background-image: linear-gradient(#ffffff 1%,#009E9E,#006B6B);
+    margin:0 auto;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.comic-cover {
+    width:200px;
+}
+
+/* footer {
+    margin:0 auto;
+    background-color: var(--blue);
+    padding: 2% 3%;
+    width:100%;
+    max-width: 100vw;;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-flow: row wrap;
+} */
+
+.add,
+.link {
+    color:var(--white);
+}
+
+u {
+    color:var(--blue);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+i {
+    font-size: 1rem;
+}
+
+h3 {
+    color:var(--yellow);
+}
+
+.window {
+    background-color: var(--white);
+    width:90%;
+    border: var(--blue) 5px solid;
+    margin: 5% auto;
+    padding: 6% 5%;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--blue);
+}
+
+a:link,
+a:visited {
+    color:var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    color:var(--coral);
+    font-weight: bold;
+}
+
+a:active {
+    color:var(--blue);
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+
+.button1 {
+    background-color: var(--yellow);
+    display: block;
+    margin:5% auto;
+    border:var(--black) solid 2px;
+}
+
+.button2 {
+    background-color: var(--blue);
+    color:var(--white);
+    border:var(--black) solid 2px;
+}
+
+thead {
+    background-color: var(--grey);
+}
+
+tr:nth-child(even) {
+    background-color: var(--grey);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: var(--black) solid 2px;
+}
+
+fieldset {
+    border:none;
+    margin-bottom:12px;
+    margin:0 auto;
+    overflow: hidden;
+    padding:0.625em;
+    display: flex;
+    align-items: center;
+    flex-wrap: column wrap;
+
+}
+
+.form {
+    margin:0 auto;
+}
+
+label {
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 3px 6px;
+    text-align: right; 
+    /* vertical-align: top;  */
+}
+
+input,
+select,
+textarea {
+    font-size: inherit;
+    width:20vw;
+    border: 1px var(--black) solid;
+}
+
+textarea {
+    resize: none;
+    height:150px;
+    vertical-align:text-top;
+}
+
+.button3 {
+    background-color: var(--yellow);
+    border:var(--black) solid 2px;
+    margin:0 auto;
+    display: block;
+}
+
+.submit-button {
+    background-color: var(--yellow);
+    border:var(--black) solid 2px;
+    margin:0 auto;
+    display: block;
+}
+
+/* .login-font {
+    font-size: 1rem;
+} */
+
+.codesquad-comics-intro {
+    font-size: 1rem;
+}
+
+
+.comic-index {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 13px 0px;
+    padding: 10px 40px;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.comic-book {
+    flex: 0.25;
+    height: 750px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.details a:link,
+.details a:visited {
+    color:var(--blue);
+    background-color: var(--white);
+    font-weight: normal;
+}
+
+.details a:hover {
+    color:var(--teal);
+    font-weight: bold;
+}
+
+.details a:active {
+   color:var(--blue);
+   background-color: var(--yellow);
+   font-weight: bold;
+}
+
+.collection_details {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+a,
+h1,
+h3,
+.add {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.fa-brands {
+    font-size: 45px;
+    margin:0 auto;
+    padding: 0 10px;
+}
+
+.fa-bars {
+    color:var(--white);
+    font-size: 40px;
+    margin:0 auto;
+    display: inline-block;
+    padding:40px;
+}
+
+.footer-details {
+    padding:30px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .nav-1 {
+        display: none;
+    }
+    
+    footer {
+        margin:0 auto;
+        background-color: var(--blue);
+        padding: 2% 3%;
+        width:100%;
+        max-width: 100vw;;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-flow: column wrap;
+    }
+
+    .table-responsive {
+        overflow-x:auto;
+    }
+
+    .menu-icon {
+        position:relative;
+        display: inline-block;
+        margin: 0 40px;
+     }
+ 
+     .menu-links {
+        position: absolute;
+        display: none;
+        list-style: none;
+     }
+ 
+     .menu-links a {
+         margin:0 auto;
+         display: inline-block;
+         color:var(--black);
+         background-color:var(--white);
+     }
+ 
+ 
+     .menu-icon:hover .menu-links {
+         display: block;
+     }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .nav-1 {
+        display: none;
+    }
+    
+    footer {
+        margin:0 auto;
+        background-color: var(--blue);
+        padding: 2% 3%;
+        width:100%;
+        max-width: 100vw;;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-flow: column wrap;
+    }
+
+    .menu-icon {
+       position:relative;
+       display: inline-block;
+       margin: 0 40px;
+    }
+
+    .menu-links {
+       position: absolute;
+       display: none;
+       list-style: none;
+    }
+
+    .menu-links a {
+        margin:0 auto;
+        display: inline-block;
+        color:var(--black);
+        background-color:var(--white);
+    }
+
+
+    .menu-icon:hover .menu-links {
+        display: block;
+    }
+
+    
+
+}
+
+@media screen and (min-width:1024px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-1 {
+        display: flex;
+        align-items: center;
+    }
+
+    footer {
+        margin:0 auto;
+        background-color: var(--blue);
+        padding: 2% 3%;
+        width:100%;
+        max-width: 100vw;;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+
+    .card {
+        margin:1vh auto;
+        width: auto;
+        border-radius:30px 30px;
+        background-color: var(--blue); 
+        display: flex;    
+    }
+
+
+
+    .card-top {
+        border:var(--yellow) 5px solid;
+        border-right: none;
+        border-radius:30px 0 0 30px;
+        padding:50px;
+    }
+    
+    .comic-bio {
+        background-color: var(--white);
+        border-radius: 0 30px 30px 0;
+        border:var(--yellow) 5px solid;
+        border-left: none;
+        padding:5% 5%;
+        line-height: 2rem;
+    }
+
+}
+
+
+

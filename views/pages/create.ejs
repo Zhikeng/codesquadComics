@@ -1,0 +1,64 @@
+<%- include('../partials/head') %>
+
+    <%- include('../partials/nav') %>
+
+        <div class="content">
+            <div class="window">
+                <h1>CREATE NEW COMIC</h1>
+                <fieldset>
+                    <form action="/books" method="POST" class="form">
+                        <div>
+                            <label for="image">Image: <input id="image" name="image" type="text"
+                                    placeholder="Image" /></label>
+                        </div>
+                        <div>
+                            <label for="title">Title: <input id="title" name="title" type="text" placeholder="Title"
+                                    minlength="1" required /></label>
+                        </div>
+                        <div>
+                            <label for="author">Author: <input id="author" name="author" type="text" minlength="1"
+                                    placeholder="Author" required /></label>
+                        </div>
+                        <div>
+                            <label for="publisher">Publisher:
+                                <select id="publisher" name="publisher" required>
+                                    <option selected disabled>Select</option>
+                                    <option>BOOM!Box</option>
+                                    <option>DC Comics</option>
+                                    <option>Harry N.Abrams</option>
+                                    <option>Icon Books</option>
+                                    <option>Image Comics</option>
+                                    <option>Marvel</option>
+                                    <option>Simon & Schuster</option>
+                                    <option>Top Shelf Productions</option>
+                                    <option>VIZ Media LLC</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="genre">Genre: <input id="genre" name="genre" type="text" placeholder="Genre"
+                                    minlength="1" required /></label>
+                        </div>
+                        <div>
+                            <label for="number_of_pages">Number of pages: <input id="number_of_pages" type="number"
+                                    name="number_of_pages" placeholder="Number of pages" minlength="1" maxlength="3"
+                                    required /></label>
+                        </div>
+                        <div>
+                            <label for="starRating">Rating: <input id="starRating" type="number" name="starRating"
+                                    min="1" max="5" placeholder="Number(0-5)" required /></label>
+                        </div>
+                        <div>
+                            <label for="synopsis">Synopsis: <textarea id="synopsis" name="synopsis"
+                                    placeholder="Synopsis" cols="40" rows="5" required></textarea></label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Submit" class="submit-button"/>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+
+        <%- include('../partials/footer') %>
