@@ -247,11 +247,11 @@ textarea {
     border:var(--black) solid 2px;
     margin:0 auto;
     display: block;
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 
 .login-font {
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 
 .codesquad-comics-intro {
